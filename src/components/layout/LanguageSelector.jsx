@@ -11,6 +11,7 @@ import { VscGlobe } from "react-icons/vsc";
 
 const LanguageSelector = () => {
   const { i18n } = useTranslation();
+  const isArabic = i18n.language === "ar";
   const currentLng = i18n.language === "en" ? "العربية" : "English";
 
   const onLanguageChange = (lng_code) => {
@@ -21,7 +22,7 @@ const LanguageSelector = () => {
     <MenuTrigger>
       <Button
         aria-label="Menu"
-        className="capitalize mx-auto justify-center bg-transparent font-medium flex items-center space-x-2 outline-none text-gray-600 hover:text-gray-900 border border-transparent rounded focus:border-primary-500 p-1"
+        className={`capitalize mx-auto justify-center bg-transparent font-medium flex items-center outline-none text-gray-600 hover:text-gray-900 border border-transparent rounded focus:border-primary-500 p-1 ${isArabic ? "flex-row-reverse *:mx-1" : "space-x-2"}`}
       >
         <span>{currentLng}</span>
         <VscGlobe className="text-xl" />

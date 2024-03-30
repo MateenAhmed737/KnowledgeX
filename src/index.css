@@ -17,6 +17,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 a {
@@ -60,7 +61,7 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply rounded-md bg-gray-400;
+  @apply bg-gray-400 rounded-md;
 }
 
 @media (prefers-color-scheme: light) {

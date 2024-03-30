@@ -3,23 +3,25 @@ const LANGUAGES = [
   { label: "العربية", code: "ar" },
 ];
 
+const monthsInArabic = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
+
 const navLinks = [
   {
-    label: "About Us",
+    label: "about_us",
     path: "/about-us",
   },
   {
-    label: "Programs",
+    label: "programs",
     path: "/programs",
   },
   {
-    label: "Our Team",
+    label: "our_team",
     path: "/our-team",
   },
   {
-    label: "Blog",
+    label: "blog",
     path: "/blog",
   },
 ]
 
-export { LANGUAGES, navLinks };
+export { LANGUAGES, navLinks, monthsInArabic };

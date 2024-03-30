@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Page = ({ title = "", className = "", children }) => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const Page = ({ title = "", className = "", children }) => {
     <div className={`w-full ${className}`}>
       <Navbar />
       {children}
+      <Footer />
     </div>
   );
 };

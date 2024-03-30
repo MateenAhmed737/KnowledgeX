@@ -31,6 +31,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setToggleNav(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [location.pathname]);
 
   return (
@@ -39,13 +40,14 @@ const Navbar = () => {
         isArabic ? "flex-row-reverse" : ""
       }`}
     >
+        <div className="absolute -right-40 md:-right-0 -top-32 rotate-12 -z-10 scale-150 size-96 md:scale-[3] bg-radial-gradient" />
       <Link to="/">
         <img src={logo} alt="KnowledgeX" className="h-24" />
       </Link>
 
       <nav className="hidden md:block">
         <ul
-          className={`list-none flex items-center *:text-gray-400 *:hover:text-gray-600 *:transition-all *:duration-200 space-x-5 ${
+          className={`list-none flex items-center *:text-gray-400 *:hover:text-gray-600 *:transition-all *:duration-200 ${
             isArabic ? "flex-row-reverse" : ""
           }`}
         >
@@ -53,9 +55,9 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <div className={`space-x-4 hidden md:flex items-center ${isArabic ? "flex-row-reverse" : ""}`}>
+      <div className={`*:mx-1 hidden md:flex items-center ${isArabic ? "flex-row-reverse" : ""}`}>
         <LanguageSelector />
-        <Button>Contact Us</Button>
+        <Button>{t("contact_us")}</Button>
       </div>
 
       {/* -- For small devices -- */}
@@ -70,21 +72,21 @@ const Navbar = () => {
         <div className={styles.sideMenuContainer}>
           {/* Side Menu */}
           <div className={styles.sideMenu}>
-            <ul className="list-none flex flex-col items-start space-y-3 xs:text-lg mb-6">
+            <ul className="flex flex-col items-start mb-6 space-y-3 list-none xs:text-lg">
               <NavLinks />
             </ul>
 
-            <div className="border border-x-0 border-y py-3">
+            <div className="py-3 border border-x-0 border-y">
               <LanguageSelector />
             </div>
-            <Button className="mt-4 w-full text-base">Contact Us</Button>
+            <Button className="w-full mt-4 text-base">{t("contact_us")}</Button>
           </div>
 
           {/* Close Btn */}
-          <div className="col-span-2 flex justify-end items-start">
+          <div className="flex items-start justify-end col-span-2">
             {toggleNav && (
               <Button
-                className="border-none rounded-md text-xl mt-6 mr-4 text-primary-500 bg-white"
+                className="mt-6 mr-4 text-xl bg-white border-none rounded-md text-primary-500"
                 onClick={close}
               >
                 <MdClose />
@@ -105,7 +107,7 @@ const NavLinks = () => {
         className={({ isActive }) =>
           `${
             isActive ? "text-primary-500" : "text-gray-700"
-          } hover:text-primary-500 transition-all duration-200`
+          } hover:text-primary-500 md:mx-2.5 transition-all duration-200`
         }
         to={path}
       >

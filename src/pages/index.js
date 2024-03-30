@@ -1,5 +1,5 @@
 import Home from "./Home";
 import Blog from "./Blog/Blog";
-import BlogPost from "./Blog/BlogPost";
+import Article from "./Blog/Article";
 
-export { Home, Blog, BlogPost };
+export { Home, Blog, Article };

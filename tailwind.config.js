@@ -4,9 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: "Poppins",
-        mont: "Montserrat",
-        emoji: "Noto Color Emoji",
+        imb: "IBM Plex Sans",
       },
       colors: {
         primary: {
@@ -23,17 +21,25 @@ export default {
         },
       },
       screens: {
-        'xs': '480px',
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
-        '2xl': '1536px',
-      }
+        xs: "480px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
+      dropShadow: {
+        "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",
+        "4xl": [
+          "0 35px 35px rgba(0, 0, 0, 0.25)",
+          "0 45px 65px rgba(0, 0, 0, 0.15)",
+        ],
+      },
     },
     backgroundImage: {
-      'radial-gradient': 'radial-gradient(at right top, rgba(234, 131, 22,0.3) 0%, rgba(242,181,115,0) 70%)',
-    }
+      "radial-gradient":
+        "radial-gradient(at right top, rgba(234, 131, 22,0.3) 0%, rgba(242,181,115,0) 70%)",
+    },
   },
   plugins: [],
 };

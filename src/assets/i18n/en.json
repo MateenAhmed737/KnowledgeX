@@ -1,6 +1,54 @@
 {
-    "About Us": "About Us",
-    "Programs": "Programs",
-    "Our Team": "Our Team",
-    "Blog": "Blog"
+  "about_us": "About Us",
+  "programs": "Programs",
+  "our_team": "Our Team",
+  "blog": "Blog",
+  "contact_us": "Contact Us",
+
+  "hero_title": "The Journey Of \n Knowledge Into Values",
+  "hero_subtext": "At Knowedgex, we are dedicated to fueling the next wave of innovation, supporting our nation's transition into a knowledge-based economy through our innovative programs.",
+  "lets_get_in_touch": "Let's get in touch",
+  
+  "our_mission": "Our Mission",
+  "mission1": "Promotes knowledge-Based economy.",
+  "mission2": "Bridges research outcomes/patents and Markets",
+  "mission3": "Support Saudi Arabia R&I ecosystem",
+  "mission4": "Raise Saudi Arabia global innovation competitiveness.",
+
+  "our_values": "Our Values",
+  "value1": "Value",
+  "value2": "Learn",
+  "value3": "Trust",
+  "value4": "Connect",
+
+  "our_programs": "Our Programs",
+  "program1_title": "Open Innovation Hub",
+  "program1_para1": "Welcome to KX open-innovation hub, a dynamic ecosystem fostering knowledge sharing and collaboration, creativity, and entrepreneurship. We serve as a catalyst for innovation, bringing together diverse stakeholders from academia and industry to co-create solutions that improve people’s lives.",
+  "program1_para2": "So, if you are industry innovator or a corporate innovation leader passionate about R&I projects",
+  "program2_title": "KX Cofactors",
+  "program2_para1": "Knowledgex Cofactors program, where the future of research and innovation takes flight!",
+  "program2_para2": "The program is specifically designed for those passionate about pushing the boundaries of knowledge into startups. Whether you're a visionary entrepreneur or a dedicated researcher, our hybrid Pre-accelerator offers a unique three-month journey aimed at assisting you in team building to transform advanced research/IPs into MVPs.",
+  "program2_para3": "Our next cohort is open now for application.",
+  "apply_now": "Apply Now",
+
+  "ahmed_nasr": "Ahmed Nasr",
+  "member_position": "Chairman of Board of Directors",
+
+
+  
+  "read_more": "read more",
+  "title": "Saudi tech deal to revolutionize early diabetes detection",
+  "body": "RIYADH: King Abdullah University of Science and Technology and Saudi health tech firm amplifAI health have joined forces to create an innovative diabetes detection system. The technique will merge amplifAI health’s artificial intelligence expertise with HyplexTM, the hyperspectral imaging technology developed by Andrea Fratalocchi, KAUST’s electrical engineering professor.",
+  "view_all_articles": "View All Articles",
+
+
+  "work_with_us": "Work with us",
+  "footer_subtext": "So, if you are industry innovator or a corporate innovation leader passionate about R&I projects.",
+  "footer_copyright": "Copyright © 2024 KnowledgeX. All rights reserved.",
+
+  "share_article": "Share Article",
+  "load_more": "Load More",
+  "related_articles": "Related Articles",
+  "view_all": "View All",
+  "home": "Home"
 }
