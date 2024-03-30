@@ -73,7 +73,7 @@ const Home = () => {
       </main>
       <br /> <br /> <br />
       {/* Our Mission */}
-      <section className="px-4 text-center">
+      <section id="about-us" className="px-4 text-center">
         <h2 className="text-3xl font-bold">{t("our_mission")}</h2>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-4 gap-4 *:border-t *:border-t-primary-400 *:rounded-md *:px-2.5 *:py-4 *:shadow-xl *:max-w-[250px] *:mx-auto *:space-y-3 pt-8">
@@ -133,7 +133,7 @@ const Home = () => {
         </div>
       </section>
       {/* Our Programs */}
-      <section className="px-4 py-10 bg-primary-100">
+      <section id="programs" className="px-4 py-10 bg-primary-100">
         <h2 className="mb-8 text-3xl font-bold text-center">
           {t("our_programs")}
         </h2>
@@ -204,7 +204,7 @@ const Home = () => {
         </div>
       </section>
       {/* Our Team */}
-      <section className="px-4 py-16 overflow-hidden bg-white">
+      <section id="our-team" className="px-4 py-16 overflow-hidden bg-white">
         <h2 className="mb-6 text-3xl font-bold text-center">{t("our_team")}</h2>
 
         <div className="w-full max-w-5xl mx-auto">

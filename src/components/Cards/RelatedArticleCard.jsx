@@ -30,7 +30,7 @@ const RelatedArticleCard = ({ id, title, body, cover, published_at }) => {
         <div className={`flex items-center text-sm text-primary-500 ${isArabic ? "flex-row-reverse text-right *:ml-1" : "text-left *:mr-1.5"}`}>
           <FiClock />
           <span>
-          {`${year} ${month} ${day}`}
+          {t("date")}
           </span>
         </div>
         <Link to={path}>

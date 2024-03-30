@@ -1,18 +1,13 @@
 import { Link } from "react-router-dom";
 import { LuChevronRightCircle } from "react-icons/lu";
 import { FiClock } from "react-icons/fi";
-import Button from "../Button";
 import { useTranslation } from "react-i18next";
-import { monthsInArabic } from "../../constants";
+import Button from "../Button";
 
-const ArticleCard = ({ id, title, body, cover, published_at, isSpecial }) => {
+const ArticleCard = ({ id, title, body, cover, isSpecial }) => {
   const { i18n, t } = useTranslation();
   const isArabic = i18n.language === "ar";
   const path = `/blog/${id}`;
-
-  const year = new Date(published_at).getFullYear();
-  const month = monthsInArabic[new Date(published_at).getMonth() + 1];
-  const day = new Date(published_at).getDate();
 
   return (
     <div
@@ -45,7 +40,7 @@ const ArticleCard = ({ id, title, body, cover, published_at, isSpecial }) => {
           }`}
         >
           <FiClock />
-          <span>{`${year} ${month} ${day}`}</span>
+          <span>{t("date")}</span>
         </div>
         <Link to={path}>
           <h5 className="mb-2 font-bold leading-snug text-gray-700 capitalize hover:text-gray-900">

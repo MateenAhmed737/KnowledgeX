@@ -39,6 +39,7 @@
   "read_more": "read more",
   "title": "Saudi tech deal to revolutionize early diabetes detection",
   "body": "RIYADH: King Abdullah University of Science and Technology and Saudi health tech firm amplifAI health have joined forces to create an innovative diabetes detection system. The technique will merge amplifAI health’s artificial intelligence expertise with HyplexTM, the hyperspectral imaging technology developed by Andrea Fratalocchi, KAUST’s electrical engineering professor.",
+  "date": "Mar 29, 2024",
   "view_all_articles": "View All Articles",
 
 
@@ -50,5 +51,14 @@
   "load_more": "Load More",
   "related_articles": "Related Articles",
   "view_all": "View All",
-  "home": "Home"
+  "home": "Home",
+
+  "blog_para1": "RIYADH: King Abdullah University of Science and Technology and Saudi health tech firm amplifAI health have joined forces to create an innovative diabetes detection system.",
+  "blog_para2": "The technique will merge amplifAI health’s artificial intelligence expertise with HyplexTM, the hyperspectral imaging technology developed by Andrea Fratalocchi, KAUST’s electrical engineering professor.",
+  "blog_para3": "The partnership will initially assess the combined technology as a way to detect and manage foot complications caused by diabetes. A clinical trial is planned.",
+  "blog_para4": "More than 500 million people currently live with diabetes with numbers expected to increase by over 100 million by 2030, according to KAUST. In Saudi Arabia, nearly 20 percent of the population is diabetic. The disease is the leading cause of lower limb amputations worldwide.",
+  "blog_para5": "The new venture aims to detect diabetes early, which would lead to better treatment plans and significantly reduce the number of lower-limb amputations.",
+  "blog_para6": "“This effort could save Saudi Arabia more than SR2 billion ($533.3 million) annually in medical costs and 1.5 million foot amputations worldwide every year, profoundly improving the quality of life of millions of people,” said Fratalocchi.",
+  "blog_para7": "HyplexTM is capable of gathering terabytes of data per second, far more than existing commercial cameras, which could be crucial to early disease detection.",
+  "blog_para8": "The collaboration marks the first application of KAUST technology to diabetes care and the agreement is an example of how combined Saudi technologies could improve diagnostics for a wide range of diseases. It also demonstrates how the KAUST Smart-Health Initiative is working to promote future healthcare in the Kingdom."
 }

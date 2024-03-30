@@ -40,15 +40,15 @@ const Article = () => {
   }
 
   return (
-    <Page title={article.title}>
+    <Page title={t("title")}>
       <br /> <br />
       <div className="px-4">
         <div className="flex items-center justify-center mb-2 *:mr-1.5 text-sm text-primary-500">
           <FiClock />
-          {new Date(article.published_at).toDateString()}
+          {t("date")}
         </div>
         <h1 className="max-w-3xl mx-auto text-3xl font-bold text-center text-gray-800">
-          {article.title}
+          {t("title")}
         </h1>
         <br />
         <img
@@ -59,63 +59,41 @@ const Article = () => {
         <div className="w-full max-w-3xl mx-auto mt-5">
           <article className="w-full space-y-6">
             <p>
-              RIYADH: King Abdullah University of Science and Technology and
-              Saudi health tech firm amplifAI health have joined forces to
-              create an innovative diabetes detection system.
+              {t("blog_para1")}
             </p>
 
             <p>
-              The technique will merge amplifAI health’s artificial intelligence
-              expertise with HyplexTM, the hyperspectral imaging technology
-              developed by Andrea Fratalocchi, KAUST’s electrical engineering
-              professor.
+              {t("blog_para2")}
             </p>
 
             <p>
-              The partnership will initially assess the combined technology as a
-              way to detect and manage foot complications caused by diabetes. A
-              clinical trial is planned.
+              {t("blog_para3")}
             </p>
 
             <p>
-              More than 500 million people currently live with diabetes with
-              numbers expected to increase by over 100 million by 2030,
-              according to KAUST. In Saudi Arabia, nearly 20 percent of the
-              population is diabetic. The disease is the leading cause of lower
-              limb amputations worldwide.
+              {t("blog_para4")}
             </p>
 
             <img
               className="w-full max-w-4xl mx-auto rounded-md"
               src="https://picsum.photos/500/250"
               alt="cover"
-            />
+              />
 
             <p>
-              The new venture aims to detect diabetes early, which would lead to
-              better treatment plans and significantly reduce the number of
-              lower-limb amputations.
+              {t("blog_para5")}
             </p>
 
             <p>
-              “This effort could save Saudi Arabia more than SR2 billion ($533.3
-              million) annually in medical costs and 1.5 million foot
-              amputations worldwide every year, profoundly improving the quality
-              of life of millions of people,” said Fratalocchi.
+              {t("blog_para6")}
             </p>
 
             <p>
-              HyplexTM is capable of gathering terabytes of data per second, far
-              more than existing commercial cameras, which could be crucial to
-              early disease detection.
+              {t("blog_para7")}
             </p>
 
             <p>
-              The collaboration marks the first application of KAUST technology
-              to diabetes care and the agreement is an example of how combined
-              Saudi technologies could improve diagnostics for a wide range of
-              diseases. It also demonstrates how the KAUST Smart-Health
-              Initiative is working to promote future healthcare in the Kingdom.
+              {t("blog_para8")}
             </p>
           </article>
         </div>

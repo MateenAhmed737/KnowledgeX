@@ -40,7 +40,7 @@ const Navbar = () => {
         isArabic ? "flex-row-reverse" : ""
       }`}
     >
-        <div className="absolute -right-40 md:-right-0 -top-32 rotate-12 -z-10 scale-150 size-96 md:scale-[3] bg-radial-gradient" />
+      <div className="absolute -right-40 md:-right-0 -top-32 rotate-12 -z-10 scale-150 size-96 md:scale-[3] bg-radial-gradient" />
       <Link to="/">
         <img src={logo} alt="KnowledgeX" className="h-24" />
       </Link>
@@ -55,7 +55,11 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <div className={`*:mx-1 hidden md:flex items-center ${isArabic ? "flex-row-reverse" : ""}`}>
+      <div
+        className={`*:mx-1 hidden md:flex items-center ${
+          isArabic ? "flex-row-reverse" : ""
+        }`}
+      >
         <LanguageSelector />
         <Button>{t("contact_us")}</Button>
       </div>
@@ -101,20 +105,50 @@ const Navbar = () => {
 
 const NavLinks = () => {
   const { t } = useTranslation();
-  return navLinks.map(({ label, path }) => (
-    <li key={label}>
-      <NavLink
-        className={({ isActive }) =>
-          `${
-            isActive ? "text-primary-500" : "text-gray-700"
-          } hover:text-primary-500 md:mx-2.5 transition-all duration-200`
-        }
-        to={path}
-      >
-        {t(label)}
-      </NavLink>
-    </li>
-  ));
+  const handleClick = (e) => {
+    const name = e.target.name;
+    console.log("name.slice(2)", name.slice(2));
+    if (name !== "/blog") {
+      setTimeout(() => {
+        document
+          .getElementById(name.slice(2))
+          ?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  };
+
+  return navLinks.map(({ label, path }) => {
+    if (path !== "/blog") {
+      return (
+        <li key={label}>
+          <Link
+            name={path}
+            className="text-gray-700 hover:text-primary-500 md:mx-2.5 transition-all duration-200"
+            onClick={handleClick}
+            to={path}
+          >
+            {t(label)}
+          </Link>
+        </li>
+      );
+    }
+
+    return (
+      <li key={label}>
+        <NavLink
+          name={path}
+          className={({ isActive }) =>
+            `${
+              isActive ? "text-primary-500" : "text-gray-700"
+            } hover:text-primary-500 md:mx-2.5 transition-all duration-200`
+          }
+          to={path}
+        >
+          {t(label)}
+        </NavLink>
+      </li>
+    );
+  });
 };
 
 export default Navbar;

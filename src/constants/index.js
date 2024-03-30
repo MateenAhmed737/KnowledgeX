@@ -8,15 +8,15 @@ const monthsInArabic = ["يناير", "فبراير", "مارس", "أبريل", 
 const navLinks = [
   {
     label: "about_us",
-    path: "/about-us",
+    path: "/#about-us",
   },
   {
     label: "programs",
-    path: "/programs",
+    path: "/#programs",
   },
   {
     label: "our_team",
-    path: "/our-team",
+    path: "/#our-team",
   },
   {
     label: "blog",
