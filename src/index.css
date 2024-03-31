@@ -32,9 +32,13 @@ a:hover {
 #root {
   margin: 0;
   display: flex;
+  position: relative;
   place-items: center;
   width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #fff;
+  color: black;
 }
 
 body {

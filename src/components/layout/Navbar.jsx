@@ -40,7 +40,7 @@ const Navbar = () => {
         isArabic ? "flex-row-reverse" : ""
       }`}
     >
-      <div className="absolute -right-40 md:-right-0 -top-32 rotate-12 -z-10 scale-150 size-96 md:scale-[3] bg-radial-gradient" />
+      <div className="absolute -right-32 md:-right-0 -top-32 rotate-12 z-0 pointer-events-none scale-150 size-96 md:scale-[3] bg-radial-gradient" />
       <Link to="/">
         <img src={logo} alt="KnowledgeX" className="h-24" />
       </Link>

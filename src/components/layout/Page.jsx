@@ -12,7 +12,7 @@ const Page = ({ title = "", className = "", children }) => {
   }, [title]);
 
   return (
-    <div className={`w-full ${className}`}>
+    <div className={`w-screen overflow-hidden ${className}`}>
       <Navbar />
       {children}
       <Footer />

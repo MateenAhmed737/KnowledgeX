@@ -51,7 +51,7 @@ const Home = () => {
       <main className="w-full mx-auto text-center max-w-7xl max-lg:relative">
         {/* -- Background -- */}
         <img
-          className="absolute object-cover w-1/2 pointer-events-none select-none max-lg:-top-28 lg:-top-4 opacity-70 -left-10 sm:-left-28 -z-10 max-w-96"
+          className="absolute object-cover w-1/2 pointer-events-none select-none max-lg:-top-28 lg:-top-4 opacity-70 -left-10 sm:-left-28 max-w-96"
           src={Symbol}
           alt="symbol"
         />
@@ -72,6 +72,7 @@ const Home = () => {
         </Button>
       </main>
       <br /> <br /> <br />
+      <br /> <br />
       {/* Our Mission */}
       <section id="about-us" className="px-4 text-center">
         <h2 className="text-3xl font-bold">{t("our_mission")}</h2>
