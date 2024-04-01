@@ -51,18 +51,18 @@ const Home = () => {
       <main className="w-full mx-auto text-center max-w-7xl max-lg:relative">
         {/* -- Background -- */}
         <img
-          className="absolute object-cover w-1/2 pointer-events-none select-none max-lg:-top-28 lg:-top-4 opacity-70 -left-10 sm:-left-28 max-w-96"
+          className="absolute object-cover w-2/3 pointer-events-none select-none min-w-56 xs:w-1/2 top-10 xs:-top-28 lg:-top-4 opacity-70 -left-28 xs:-left-10 sm:-left-24 max-w-96"
           src={Symbol}
           alt="symbol"
         />
         <br /> <br /> <br /> <br />
         {/* Content */}
-        <h1 className="font-bold text-4xl xs:text-6xl capitalize px-2.5">
+        <h1 className="font-bold text-5xl xs:text-6xl capitalize px-2.5">
           {isArabic ? (
             t("hero_title")
           ) : (
             <>
-              The journey of <br /> knowledge into values
+              The journey of <br className="hidden xs:block"/> knowledge into values
             </>
           )}
         </h1>
